@@ -4,7 +4,7 @@ title: API Reference1
 language_tabs: # must be one of https://git.io/vQNgJ
   # - shell
   # - ruby
-  - python
+  - python : Python
   # - javascript
 
 toc_footers:
