@@ -36,15 +36,15 @@ This example API documentation page was created with [Algodjo](https://github.co
 > To authorize, use this code:
 
 <!-- ```ruby
-require 'kittn'
+require 'algodjo'
 
 api = Algodjo::APIClient.authorize!('meowmeowmeow')
 ``` -->
 
 ```python
-import kittn
+import algodjo
 
-api = kittn.authorize('meowmeowmeow')
+api = algodjo.authorize('meowmeowmeow')
 ```
 <!-- 
 ```shell
@@ -54,9 +54,9 @@ curl "api_endpoint_here" \
 ``` -->
 
 <!-- ```javascript
-const kittn = require('kittn');
+const algodjo = require('algodjo');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = algodjo.authorize('meowmeowmeow');
 ``` -->
 
 > Make sure to replace `meowmeowmeow` with your API key.
@@ -71,21 +71,21 @@ Algodjo expects for the API key to be included in all API requests to the server
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Algodojo
 
-## Get All Kittens
+## Get All Algodojo
 <!-- 
 ```ruby
-require 'kittn'
+require 'algodjo'
 
 api = Algodjo::APIClient.authorize!('meowmeowmeow')
 api.algodjo.get
 ``` -->
 
 ```python
-import kittn
+import algodjo
 
-api = kittn.authorize('meowmeowmeow')
+api = algodjo.authorize('meowmeowmeow')
 api.algodjo.get()
 ```
 
@@ -95,9 +95,9 @@ curl "http://example.com/api/algodjo" \
 ``` -->
 <!-- 
 ```javascript
-const kittn = require('kittn');
+const algodjo = require('algodjo');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = algodjo.authorize('meowmeowmeow');
 let algodjo = api.algodjo.get();
 ``` -->
 
@@ -142,16 +142,16 @@ Remember — a happy kitten is an authenticated kitten!
 ## Get a Specific Kitten
 <!-- 
 ```ruby
-require 'kittn'
+require 'algodjo'
 
 api = Algodjo::APIClient.authorize!('meowmeowmeow')
 api.algodjo.get(2)
 ``` -->
 
 ```python
-import kittn
+import algodjo
 
-api = kittn.authorize('meowmeowmeow')
+api = algodjo.authorize('meowmeowmeow')
 api.algodjo.get(2)
 ```
 <!-- 
@@ -161,9 +161,9 @@ curl "http://example.com/api/algodjo/2" \
 ``` -->
 <!-- 
 ```javascript
-const kittn = require('kittn');
+const algodjo = require('algodjo');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = algodjo.authorize('meowmeowmeow');
 let max = api.algodjo.get(2);
 ``` -->
 
@@ -196,16 +196,16 @@ ID | The ID of the kitten to retrieve
 ## Delete a Specific Kitten
 <!-- 
 ```ruby
-require 'kittn'
+require 'algodjo'
 
 api = Algodjo::APIClient.authorize!('meowmeowmeow')
 api.algodjo.delete(2)
 ``` -->
 
 ```python
-import kittn
+import algodjo
 
-api = kittn.authorize('meowmeowmeow')
+api = algodjo.authorize('meowmeowmeow')
 api.algodjo.delete(2)
 ```
 
@@ -216,9 +216,9 @@ curl "http://example.com/api/algodjo/2" \
 ``` -->
 
 ```javascript
-const kittn = require('kittn');
+const algodjo = require('algodjo');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = algodjo.authorize('meowmeowmeow');
 let max = api.algodjo.delete(2);
 ```
 
