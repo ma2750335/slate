@@ -25,7 +25,7 @@ meta:
 
 # Introduction
 
-Welcome to the Algodjo API! You can use our API to access Algodjo API endpoints, which can get information on various cats, algodjo, and breeds in our database.
+Welcome to the Algodjo API! You can use our API to access Algodjo API endpoints, which can connect on various brokers, algodjo, and execute you automatic trading.
 
 We have language bindings in Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
@@ -44,7 +44,7 @@ api = Algodjo::APIClient.authorize!('meowmeowmeow')
 ```python
 import algodjo
 
-api = algodjo.authorize('meowmeowmeow')
+api = algodjo.authorize('YOUTOKEN')
 ```
 <!-- 
 ```shell
@@ -59,7 +59,7 @@ const algodjo = require('algodjo');
 let api = algodjo.authorize('meowmeowmeow');
 ``` -->
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `YOUTOKEN` with your API key.
 
 Algodjo uses API keys to allow access to the API. You can register a new Algodjo API key at our [developer portal](http://example.com/developers).
 
