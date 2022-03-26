@@ -20,14 +20,14 @@ code_clipboard: true
 
 meta:
   - name: description
-    content: Documentation for the Kittn API
+    content: Documentation for the Algodjo API
 ---
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Algodjo API! You can use our API to access Algodjo API endpoints, which can get information on various cats, algodjo, and breeds in our database.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+We have language bindings in Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 This example API documentation page was created with [Algodjo](https://github.com/slatedocs/algodjo). Feel free to edit it and use it as a base for your own API's documentation.
 
@@ -38,7 +38,7 @@ This example API documentation page was created with [Algodjo](https://github.co
 <!-- ```ruby
 require 'kittn'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Algodjo::APIClient.authorize!('meowmeowmeow')
 ``` -->
 
 ```python
@@ -61,9 +61,9 @@ let api = kittn.authorize('meowmeowmeow');
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+Algodjo uses API keys to allow access to the API. You can register a new Algodjo API key at our [developer portal](http://example.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+Algodjo expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
 `Authorization: meowmeowmeow`
 
@@ -78,19 +78,19 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 ```ruby
 require 'kittn'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
+api = Algodjo::APIClient.authorize!('meowmeowmeow')
+api.algodjo.get
 ``` -->
 
 ```python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+api.algodjo.get()
 ```
 
 <!-- ```shell
-curl "http://example.com/api/kittens" \
+curl "http://example.com/api/algodjo" \
   -H "Authorization: meowmeowmeow"
 ``` -->
 <!-- 
@@ -98,7 +98,7 @@ curl "http://example.com/api/kittens" \
 const kittn = require('kittn');
 
 let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
+let algodjo = api.algodjo.get();
 ``` -->
 
 > The above command returns JSON structured like this:
@@ -122,18 +122,18 @@ let kittens = api.kittens.get();
 ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all algodjo.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET http://example.com/api/algodjo`
 
 ### Query Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
 include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+available | true | If set to false, the result will include algodjo that have already been adopted.
 
 <aside class="success">
 Remember — a happy kitten is an authenticated kitten!
@@ -144,19 +144,19 @@ Remember — a happy kitten is an authenticated kitten!
 ```ruby
 require 'kittn'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
+api = Algodjo::APIClient.authorize!('meowmeowmeow')
+api.algodjo.get(2)
 ``` -->
 
 ```python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
+api.algodjo.get(2)
 ```
 <!-- 
 ```shell
-curl "http://example.com/api/kittens/2" \
+curl "http://example.com/api/algodjo/2" \
   -H "Authorization: meowmeowmeow"
 ``` -->
 <!-- 
@@ -164,7 +164,7 @@ curl "http://example.com/api/kittens/2" \
 const kittn = require('kittn');
 
 let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
+let max = api.algodjo.get(2);
 ``` -->
 
 > The above command returns JSON structured like this:
@@ -185,7 +185,7 @@ This endpoint retrieves a specific kitten.
 
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`GET http://example.com/algodjo/<ID>`
 
 ### URL Parameters
 
@@ -198,19 +198,19 @@ ID | The ID of the kitten to retrieve
 ```ruby
 require 'kittn'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
+api = Algodjo::APIClient.authorize!('meowmeowmeow')
+api.algodjo.delete(2)
 ``` -->
 
 ```python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
+api.algodjo.delete(2)
 ```
 
 <!-- ```shell
-curl "http://example.com/api/kittens/2" \
+curl "http://example.com/api/algodjo/2" \
   -X DELETE \
   -H "Authorization: meowmeowmeow"
 ``` -->
@@ -219,7 +219,7 @@ curl "http://example.com/api/kittens/2" \
 const kittn = require('kittn');
 
 let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
+let max = api.algodjo.delete(2);
 ```
 
 > The above command returns JSON structured like this:
@@ -235,7 +235,7 @@ This endpoint deletes a specific kitten.
 
 ### HTTP Request
 
-`DELETE http://example.com/kittens/<ID>`
+`DELETE http://example.com/algodjo/<ID>`
 
 ### URL Parameters
 
